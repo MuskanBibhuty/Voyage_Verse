@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+}
+
+.bg{
+    height: 75vh;
+    background-image: url(/img/balloon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 75%;
+    position: relative;
+}
+
+.bg .box{
+    height: 75vh;
+    width: 100%;
+    opacity: 0.3;
+    background-color: black;
+    position: absolute;
+    top:0;
+}
+
+.statement{
+    color: rgb(255, 255, 255);
+    height: calc(100% - 0px);
+    padding-top: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-family: roboto;
+}
+
+.statement> :nth-child(1){
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.statement> :nth-child(2){
+    font-size: 25px;
+}
+
+.statement> :nth-child(3){
+    font-size: 20px;
+}
+
+.search{
+    width: 600px;
+    height: 50px;
+    margin: 10px 25px 10px 5px;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.search .first{
+    width: 30px;
+    padding: 5px 12px 5px 17px;
+    fill: red;
+}
+
+.search input{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-weight: bold;
+    padding: 8px 15px 8px 0px;
+}
+
+.search .inp {
+    width: 100%;
+    max-width: 453px;
+}
+
+.search .inp::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.search .second{
+    width: 30px;
+    padding: 5px 5px 5px 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,164 @@
+.container{
+    display: flex;
+    color: white;
+}
+
+.left{
+    background-color: #121212;
+    border-radius: 15px;
+    width: 30vw;
+    height: 580px;
+    margin: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scrollbar-color: #121212 #121212;
+    scroll-behavior: smooth;
+}
+
+.left:hover{
+    scrollbar-color: rgb(55, 55, 55) #121212;
+}
+
+.left .top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left .top button{
+    margin-left: 10px;
+}
+
+.left .photo{
+    /* border: 2px solid red; */
+    background-image: url(/user.avif);
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(247, 246, 246);
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin: 20px;
+    opacity: 0.6;
+}
+
+.left .text{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 85px 0px 15px;
+}
+
+/* .text h1{
+    display: flex;
+    margin-bottom: 5px;
+}
+.text h1 img{
+    filter: invert(1);
+    opacity: 0.3;
+    margin-left: 10px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.text span{
+    display: flex;
+}
+.text span img{
+    filter: invert(1);
+    opacity: 0.3;
+    margin-left: 10px;
+    width: 15px;
+    cursor: pointer;
+} */
+
+.left button{
+    margin-top: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left .middle button{
+    margin: 10px 0px 50px 32px;
+    padding: 10px 140px;
+    font-size: 17px;
+}
+
+.left .middle button img{
+    margin-left: 5px;
+    width: 15px;
+}
+
+.info{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.info h2{
+    font-weight: 500;
+}
+
+.info img{
+    filter: invert(1);
+    margin-right: 10px;
+    
+}
+
+.card{
+    margin: 10px 0px 0px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.card .des{
+    font-weight: 100;
+}
+
+.card img{
+    margin: 0px 20px 0px 5px;
+    /* filter: invert(1); */
+}
+
+.separation{
+    background-color: rgb(87, 87, 87);
+    height: 1px;
+    width: 400px;
+    margin: 15px 25px 0px 25px;
+    /* margin-left: 25px; */
+}
+
+.service{
+    margin: 60px 0px 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.service h2{
+    font-weight: 500;
+}
+
+.service img{
+    filter: invert(1);
+    margin-right: 10px;
+    
+}
+
+.link .card{
+    cursor: pointer;
+}
+
+.bottom{
+    margin: 30px 0px 20px 40px;
+}
+
+.bottom button{
+    margin: 0px 20px;
+    padding: 10px 30px;
+    font-size: 15px;
+}

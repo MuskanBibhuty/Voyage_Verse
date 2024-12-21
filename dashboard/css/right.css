@@ -1,0 +1,35 @@
+.right{
+    /* border: 2px solid red; */
+    background-color: #121212;
+    border-radius: 15px;
+    height: 580px;
+    width: 70vw;
+    margin: 10px 20px 10px 0px;
+    /* margin-right: 20px; */
+}
+
+.progress{
+    display: flex;
+    justify-content: space-around;
+}
+
+.badge{
+    margin-top: 20px;
+    background-color: rgb(45, 45, 45);
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 200px;
+    border-radius: 35px;
+    box-shadow: 0 6px 11px 3px #00000033;
+    /* background-image: linear-gradient(to bottom, yellow, orange); */
+}
+
+.badge h2{
+    padding: 20px 0px 0px 20px;
+}
+
+.badge span{
+    padding: 0px 0px 0px 40px;
+    font-weight: bold;
+    font-size: 120px;
+}
