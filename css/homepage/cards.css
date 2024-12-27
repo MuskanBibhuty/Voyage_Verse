@@ -65,40 +65,40 @@ main {
 }
 
 .container1 .card:nth-child(1)::before {
-    background-image: url(/img/mountain.jpg);
+    background-image: url(/img/homepage/mountain.jpg);
     background-position: 60%;
 }
 
 .container1 .card:nth-child(2)::before {
-    background-image: url(/img/galaxy.jpg);
+    background-image: url(/img/homepage/galaxy.jpg);
 }
 
 .container1 .card:nth-child(3)::before {
-    background-image: url(/img/desert.jpg);
+    background-image: url(/img/homepage/desert.jpg);
     background-position: 20%;
 }
 
 .container1 .card:nth-child(4)::before {
-    background-image: url(/img/beach.jpg);
+    background-image: url(/img/homepage/beach.jpg);
     background-position: 55%;
 }
 
 .container2 .card:nth-child(1)::before {
-    background-image: url(/img/seasonal.jpg);
+    background-image: url(/img/homepage/seasonal.jpg);
     background-position: 10%;
 }
 
 .container2 .card:nth-child(2)::before {
-    background-image: url(/img/waterfall.avif);
+    background-image: url(/img/homepage/waterfall.avif);
 }
 
 .container2 .card:nth-child(3)::before {
-    background-image: url(/img/jungle.avif);
+    background-image: url(/img/homepage/jungle.avif);
     background-position: 45%;
 }
 
 .container2 .card:nth-child(4)::before {
-    background-image: url(/img/adventures.jpg);
+    background-image: url(/img/homepage/adventures.jpg);
 }
 
 .content {

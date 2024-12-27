@@ -4,7 +4,7 @@ body{
 
 .bg{
     height: 75vh;
-    background-image: url(/img/balloon.jpg);
+    background-image: url(/img/homepage/balloon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 75%;

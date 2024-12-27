@@ -5,6 +5,7 @@
 
 .left{
     background-color: #121212;
+    /* background-color: black; */
     border-radius: 15px;
     width: 30vw;
     height: 580px;
@@ -32,7 +33,7 @@
 
 .left .photo{
     /* border: 2px solid red; */
-    background-image: url(/user.avif);
+    background-image: url(/img/dashboard/user.avif);
     background-size: 110px;
     background-repeat: no-repeat;
     background-position: center;

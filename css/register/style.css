@@ -18,14 +18,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(bg.jpg) no-repeat;
+    background: url(/img/register/bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .wrapper {
     margin-left: 220px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 420px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);

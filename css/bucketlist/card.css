@@ -1,0 +1,151 @@
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(.19, .1, .22, 1);
+}
+
+.container{
+    height: 100%;
+    /* background-color: #e1e1e1; */
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    margin: 0px auto;
+    max-width: 1300px;
+    /* font-family: sans-serif; */
+}
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 3rem;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 6px 11px 3px #00000033;
+    box-sizing: border-box;
+    margin: 5px 0px;
+}
+
+@media (min-width: 600px) {
+    .card {
+        height: 250px;
+    }
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+}
+
+.card::before {
+    background-image: url(/img/bucketlist/mountain.jpg);
+}
+/* .card:nth-child(2)::before {
+    background-image: url(/img/bucketlist/mountain.jpg);
+}
+.card:nth-child(3)::before {
+    background-image: url(/img/bucketlist/mountain.jpg);
+}
+.card:nth-child(4)::before {
+    background-image: url(/img/bucketlist/mountain.jpg);
+}
+.card:nth-child(5)::before {
+    background-image: url(/img/bucketlist/mountain.jpg);
+} */
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.like img{
+    z-index: 1;
+    filter: invert(1);
+    width: 30px;
+    margin-bottom: 180px;
+    cursor: pointer;
+}
+
+.card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.1) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
+
+/* Hover */
+@media (hover: hover) and (min-width: 600px) {
+    .card::after {
+        transform: translateY(0);
+    }
+
+    /* .content {
+        transform: translateY(calc(100% - 30px));
+    } */
+
+    .card:hover:after,
+    .card:focus-within:after {
+        transform: translateY(-50%);
+    }
+
+    .card:hover .content,
+    .card:focus-within .content {
+        transform: translateY(0);
+    }
+
+    .card:hover::before,
+    .card:focus-within::before {
+        transform: translateY(-5%);
+    }
+}
