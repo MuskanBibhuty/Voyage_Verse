@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/dashboard/right.css">
     <!-- <link rel="stylesheet" href="css/badge.css"> -->
     <title>Dashboard</title>
+    <script type="module" src="/js/dashboard/script.js"></script>
 </head>
 
 <body>
@@ -35,8 +36,8 @@
             <div class="top">
                 <span class="photo"></span>
                 <span class="text">
-                    <h1>Username</h1>
-                    <span>xyz@gmail.com</span>
+                    <h1 class="username">Username</h1>
+                    <span class="email">xyz@gmail.com</span>
                     <button>Change Password</button>
                 </span>
             </div>
@@ -54,21 +55,21 @@
                 <div class="card">
                     <img src="/icon/dashboard/arrow.svg" alt="">
                     <p>Name&ensp;:</p>
-                    <p class="des">&ensp;ABC XYZ</p>
+                    <p class="des username">&ensp;ABC XYZ</p>
                 </div>
                 <div class="separation"></div>
 
                 <div class="card">
                     <img src="/icon/dashboard/arrow.svg" alt="">
-                    <p>Phone number&ensp;:</p>
-                    <p class="des">&ensp;98XXXXXXXX</p>
+                    <p>Email&ensp;:</p>
+                    <p class="des email">&ensp;xyz@gmail.com</p>
                 </div>
                 <div class="separation"></div>
 
                 <div class="card">
                     <img src="/icon/dashboard/arrow.svg" alt="">
                     <p>Country&ensp;:</p>
-                    <p class="des">&ensp;India</p>
+                    <p class="des" id="country">&ensp;India</p>
                 </div>
                 <div class="separation"></div>
 

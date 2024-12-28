@@ -6,30 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/register/style.css">
     <title>Register</title>
+    <script type="module" src="/js/register/script.js"></script>
 </head>
 
 <body>
     <div class="box"></div>
     <div class="wrapper">
-        <form action="">
+        <form method="post" action="">
             <h1>Register</h1>
+
+            <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
+
             <div class="input-box">
-                <input type="text" placeholder="Username" required>
+                <input type="text" placeholder="Username" id="uName" required>
                 <i><img src="/icon/register/user.svg" alt=""></i>
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Email" required>
+                <input type="text" placeholder="Email" id="email" required>
                 <i><img src="/icon/register/email.svg" alt=""></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="Country" id="country" required>
+                <i><img src="/icon/register/lock.svg" alt=""></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" id="password" required>
                 <i><img src="/icon/register/lock.svg" alt=""></i>
             </div>
             <div class="remember-forgot">
                 <label><input type="checkbox">Remember Me</label>
                 <a href="#">Forgot Password</a>
             </div>
-            <button type="submit" class="btn">Register</button>
+            <button type="submit" class="btn" id="register">Register</button>
             <div class="register-link">
                 <p>Already have an account? <a href="/subpage/signin.html">Sign in</a></p>
             </div>
