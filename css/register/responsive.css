@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 30px;
+    }
+
+    .wrapper h1 {
+        font-size: 28px;
+    }
+
+    .wrapper .input-box input {
+        font-size: 14px;
+        padding: 15px 40px 15px 15px;
+    }
+
+    .wrapper .btn {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .register-link p {
+        font-size: 12px;
+    }
+
+    .remember-forgot {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 15px 20px;
+    }
+
+    .wrapper h1 {
+        font-size: 24px;
+    }
+
+    .input-box input {
+        font-size: 12px;
+        padding: 10px 35px 10px 10px;
+    }
+
+    .remember-forgot a {
+        font-size: 12px;
+    }
+
+    .register-link p {
+        font-size: 10px;
+    }
+}

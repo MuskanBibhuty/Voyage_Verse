@@ -1,0 +1,104 @@
+/* CSS for Cards */
+.card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    padding: 3rem;
+    padding-bottom: 20px;
+    width: 100%; /* Ensure card spans full column width */
+    text-align: center;
+    color: #FFF;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 6px 11px 3px #00000033;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+
+.card .content {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.card .like {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+/* Ensure responsive height */
+@media (min-width: 600px) {
+    .card {
+        height: 250px;
+    }
+}
+
+/* CSS for Navigation */
+nav {
+    flex-wrap: wrap;
+}
+
+nav span:first-child {
+    padding-left: 20px;
+}
+
+nav span:last-child ul {
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+    nav span:last-child ul {
+        flex-direction: row;
+        gap: 40px;
+        padding-right: 100px;
+    }
+}
+
+/* CSS for Other Elements */
+.container {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1300px;
+    box-sizing: border-box;
+    grid-template-columns: 1fr; /* Default to single-column layout */
+}
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    }
+}
+
+@media (min-width: 800px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on wider screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr); /* Four columns on largest screens */
+    }
+}
+
+/* Align the button properly */
+.btn {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn button {
+    margin: 0;
+}
+

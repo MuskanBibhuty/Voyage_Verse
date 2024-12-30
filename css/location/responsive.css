@@ -1,0 +1,139 @@
+/* Base Styles: No changes */
+
+@media only screen and (max-width: 1200px) {
+    /* Adjust main container width */
+    main {
+        width: 90vw;
+    }
+
+    /* Adjust nav padding */
+    nav span:first-child {
+        padding-left: 20px;
+    }
+
+    nav span:last-child ul {
+        gap: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* Stack navigation items for smaller screens */
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav span:first-child {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav span:last-child ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 0;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .image .box {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .info {
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .place {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .place .img {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .place .content {
+        margin: 20px auto;
+    }
+
+    .rating {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .score {
+        margin-bottom: 20px;
+    }
+
+    .bars {
+        width: 90%;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card .user {
+        margin: 20px auto;
+    }
+
+    .card .content {
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    nav .text {
+        font-size: 20px;
+    }
+
+    nav span:last-child ul {
+        font-size: 14px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .info button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .score img {
+        width: 40px;
+    }
+
+    #big {
+        font-size: 36px;
+    }
+
+    #small {
+        font-size: 16px;
+    }
+
+    .line {
+        width: 200px;
+    }
+}
