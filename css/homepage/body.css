@@ -70,6 +70,8 @@ body{
     border: none;
     font-weight: bold;
     padding: 8px 15px 8px 0px;
+    outline: none;
+    color: black;
 }
 
 .search .inp {
