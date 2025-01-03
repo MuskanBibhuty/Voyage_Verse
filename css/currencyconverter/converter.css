@@ -15,10 +15,21 @@
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 55%;
     padding: 3em;
+    padding-top: 1.5em;
     border-radius: 0.8em;
     border: 2px solid rgba(99, 99, 99, 0.4);
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.img img{
+    width: 100px;
+    margin-bottom: 20px;
 }
 
 .app-details {
@@ -49,8 +60,9 @@ input#amount {
     display: block;
     width: 100%;
     border-bottom: 2px solid #02002c;
-    color: #7a789d;
+    color: #7f7f85;
     margin-bottom: 2em;
+    margin-top: 0.3em;
     padding: 0.5em;
 }
 
@@ -70,6 +82,7 @@ select {
     width: 100%;
     padding: 0.6em;
     font-size: 1em;
+    font-weight: bold;
     border-radius: 0.2em;
     appearance: none;
     -webkit-appearance: none;
@@ -78,7 +91,7 @@ select {
     background-repeat: no-repeat;
     background-position: right 15px top 50%, center;
     background-size: 20px 20px;
-    background-color: #6b6666;
+    background-color: #949292;
     color: #ffffff;
 }
 
@@ -90,7 +103,7 @@ select option {
 button {
     font-size: 1em;
     width: 100%;
-    background-color: #6b6666;
+    background-color: #949292;
     padding: 1em 0;
     margin-top: 2em;
     border-radius: 0.3em;
@@ -105,4 +118,5 @@ button {
     color: #02002c;
     background-color: #c7c7c7;
     padding: 0.8em 0;
+    font-weight: bold;
 }

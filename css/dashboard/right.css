@@ -6,11 +6,22 @@
     width: 70vw;
     margin: 10px 20px 10px 0px;
     /* margin-right: 20px; */
+    overflow-y: auto;
+    scrollbar-color: #121212 #121212;
+    scroll-behavior: smooth;
+}
+
+.right:hover{
+    scrollbar-color: rgb(55, 55, 55) #121212;
 }
 
 .progress{
     display: flex;
     justify-content: space-around;
+}
+
+.tagimg img{
+    height: 250px;
 }
 
 .badge{
@@ -32,4 +43,18 @@
     padding: 0px 0px 0px 40px;
     font-weight: bold;
     font-size: 120px;
+}
+
+.explore .h{
+    margin: 50px 0px 10px 30px;
+}
+
+.explore .separation2{
+    background-color: rgb(87, 87, 87);
+    height: 1px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+    /* margin: 15px 25px 0px 25px; */
+    /* margin-left: 25px; */
 }

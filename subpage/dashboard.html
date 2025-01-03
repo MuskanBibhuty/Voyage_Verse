@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/dashboard/left.css">
     <link rel="stylesheet" href="/css/dashboard/nav.css">
     <link rel="stylesheet" href="/css/dashboard/right.css">
-    <!-- <link rel="stylesheet" href="css/badge.css"> -->
+    <link rel="stylesheet" href="/css/dashboard/cards.css">
     <title>Dashboard</title>
     <script type="module" src="/js/dashboard/script.js"></script>
 </head>
@@ -30,7 +30,7 @@
         <span>
             <ul>
                 <li><a href="/subpage/bucketlist.html">Bucketlist</a></li>
-                <li><a href="#">Trips</a></li>
+                <li><a href="/subpage/covereddestinations.html">Covered Destinations</a></li>
                 <li><a href="/subpage/currencyconverter.html">Currency Converter</a></li>
                 <li><a href="/subpage/dashboard.html">Profile</a></li>
             </ul>
@@ -40,70 +40,70 @@
     <div class="container">
         <div class="left">
             <div class="top">
-                <span class="photo"></span>
+                <img class="photo" src="/img/dashboard/user.jpg" alt="">
                 <span class="text">
                     <h1 class="username">Username</h1>
                     <span class="email">xyz@gmail.com</span>
-                    <button>Change Password</button>
+                    <!-- <button>Change Password</button> -->
                 </span>
             </div>
 
-            <div class="middle">
+            <!-- <div class="middle">
                 <button>Edit Profile <img src="/icon/dashboard/pen.svg" alt=""></button>
-            </div>
+            </div> -->
 
             <div class="info">
                 <img src="/icon/dashboard/user.svg" alt="">
                 <h2>Personal Information</h2>
             </div>
 
-            <div class="cards">
-                <div class="card">
+            <div class="rows">
+                <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
-                    <p>Name&ensp;:</p>
-                    <p class="des username">&ensp;ABC XYZ</p>
+                    <p>Username&ensp;:&ensp;</p>
+                    <p class="des username">ABC XYZ</p>
                 </div>
                 <div class="separation"></div>
 
-                <div class="card">
+                <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
-                    <p>Email&ensp;:</p>
-                    <p class="des email">&ensp;xyz@gmail.com</p>
+                    <p>Email&ensp;:&ensp;</p>
+                    <p class="des email">xyz@gmail.com</p>
                 </div>
                 <div class="separation"></div>
 
-                <div class="card">
+                <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
-                    <p>Country&ensp;:</p>
-                    <p class="des" id="country">&ensp;India</p>
+                    <p>Country&ensp;:&ensp;</p>
+                    <p class="des" id="country">India</p>
                 </div>
                 <div class="separation"></div>
 
-                <div class="card">
+                <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
-                    <p>Preferred Language&ensp;:</p>
-                    <p class="des">&ensp;English</p>
+                    <p>Language&ensp;:&ensp;</p>
+                    <p class="des">English</p>
                 </div>
                 <div class="separation"></div>
 
-                <div class="card">
+                <!-- <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
-                    <p>Currency&ensp;:</p>
-                    <p class="des">&ensp;INR</p>
+                    <p>Currency&ensp;:&ensp;</p>
+                    <p class="des">INR</p>
                 </div>
-                <div class="separation"></div>
+                <div class="separation"></div> -->
 
-                <div class="card">
+                <!-- <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
-                    <p>Travel Interest&ensp;:</p>
-                    <p class="des">&ensp;Beach, Mountain, Adventure</p>
+                    <p>Travel Interest&ensp;:&ensp;</p>
+                    <p class="des">Beach, Mountain, Adventure</p>
                 </div>
-                <div class="separation"></div>
+                <div class="separation"></div> -->
 
-                <div class="card">
+                <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
-                    <p>Bucketlist Visibility&ensp;:</p>
-                    <p class="des">&ensp;Private</p>
+                    <p>Bucketlist Visibility&ensp;:&ensp;</p>
+                    <p class="des">Private</p>
                 </div>
             </div>
 
@@ -112,26 +112,26 @@
                 <h2>Customer Support</h2>
             </div>
 
-            <div class="cards link">
-                <div class="card">
+            <div class="rows link">
+                <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
                     <p>Help center</p>
                 </div>
                 <div class="separation"></div>
 
-                <div class="card">
+                <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
                     <p>FAQ</p>
                 </div>
                 <div class="separation"></div>
 
-                <div class="card">
+                <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
                     <p>Contact Us</p>
                 </div>
                 <div class="separation"></div>
 
-                <div class="card">
+                <div class="row">
                     <img src="/icon/dashboard/arrow.svg" alt="">
                     <p>Submit Feedback</p>
                 </div>
@@ -146,26 +146,98 @@
 
         <div class="right">
             <div class="progress">
+                
+
                 <div class="badge">
                     <h2>Bucketlist Spots</h2>
                     <span>16</span>
                 </div>
 
-                <div class="badge">
+                <div class="tagimg">
+                    <img src="/img/dashboard/travel.png" alt="">
+                </div>
+
+                <!-- <div class="badge">
                     <h2>Planned Trips</h2>
                     <span>12</span>
-                </div>
+                </div> -->
 
                 <div class="badge">
                     <h2>Covered Destinations</h2>
                     <span>10</span>
                 </div>
 
-                <div class="badge">
+                <!-- <div class="badge">
                     <h2>Countries Explored</h2>
                     <span>2</span>
+                </div> -->
+            </div>
+
+            <div class="explore">
+                <h2 class="h">EXPLORE</h2>
+                <div class="separation2 "></div>
+
+                <div class="cards cards1">
+                    <div class="card">
+                        <div class="content">
+                            <h2 class="title">Conquer the Peaks</h2>
+                            <p class="description">Reach new heights, embrace the peaks</p>
+                            <button class="btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2 class="title">Skies Aglow</h2>
+                            <p class="description">Dance beneath nature's cosmic lights</p>
+                            <button class="btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2 class="title">Sands of Serenity</h2>
+                            <p class="description">Unveil the mystery of the endless deserts</p>
+                            <button class="btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2 class="title">Waves and Wanderlust</h2>
+                            <p class="description">Feel the sun, sand, and sea – a perfect escape</p>
+                            <button class="btn">Explore Now</button>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="cards cards2">
+                    <div class="card">
+                        <div class="content">
+                            <h2 class="title">Seasons of Joy</h2>
+                            <p class="description">Embrace the spirit of every season</p>
+                            <button class="btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2 class="title">Whispers of Waterfalls</h2>
+                            <p class="description">Chase the magic of waterfalls</p>
+                            <button class="btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2 class="title">Jungle Safari</h2>
+                            <p class="description">Dive into the heart of the wild</p>
+                            <button class="btn">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2 class="title">Dare to Explore</h2>
+                            <p class="description">Embrace the thrill, live the adventure</p>
+                            <button class="btn">Explore Now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

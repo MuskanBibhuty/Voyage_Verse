@@ -13,7 +13,7 @@
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow-y: auto;
     scrollbar-color: #121212 #121212;
     scroll-behavior: smooth;
 }
@@ -25,6 +25,7 @@
 .left .top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .left .top button{
@@ -42,13 +43,14 @@
     width: 150px;
     border-radius: 100px;
     margin: 20px;
-    opacity: 0.6;
+    /* opacity: 0.6; */
 }
 
 .left .text{
     display: flex;
     flex-direction: column;
-    margin: 40px 85px 0px 15px;
+    /* margin: 40px 85px 0px 15px; */
+    margin-right: 20px;
 }
 
 /* .text h1{
@@ -97,6 +99,7 @@
 .info{
     margin-left: 20px;
     margin-bottom: 5px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
@@ -111,17 +114,17 @@
     
 }
 
-.card{
+.row{
     margin: 10px 0px 0px 30px;
     display: flex;
     align-items: center;
 }
 
-.card .des{
+.row .des{
     font-weight: 100;
 }
 
-.card img{
+.row img{
     margin: 0px 20px 0px 5px;
     /* filter: invert(1); */
 }
@@ -135,7 +138,7 @@
 }
 
 .service{
-    margin: 60px 0px 5px 20px;
+    margin: 40px 0px 5px 20px;
     display: flex;
     align-items: center;
 }
@@ -150,7 +153,7 @@
     
 }
 
-.link .card{
+.link .row{
     cursor: pointer;
 }
 
@@ -162,4 +165,5 @@
     margin: 0px 20px;
     padding: 10px 30px;
     font-size: 15px;
+    background-color: red;
 }

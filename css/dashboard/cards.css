@@ -1,0 +1,190 @@
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(.19, .1, .22, 1);
+}
+
+.cards{
+    /* height: 100%; */
+    background-color: #121212;
+    display: grid;
+    place-items: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.cards{
+    display: grid;
+    grid-gap: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1300px;
+    font-family: sans-serif;
+    /* margin-top: 50px; */
+}
+
+@media (min-width: 600px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 6px 11px 3px #00000033;
+}
+
+@media (min-width: 600px) {
+    .card {
+        height: 250px;
+    }
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+}
+
+.cards1 .card:nth-child(1)::before {
+    background-image: url(/img/dashboard/mountain.jpg);
+    background-position: 60%;
+}
+
+.cards1 .card:nth-child(2)::before {
+    background-image: url(/img/dashboard/galaxy.jpg);
+}
+
+.cards1 .card:nth-child(3)::before {
+    background-image: url(/img/dashboard/desert.jpg);
+    background-position: 20%;
+}
+
+.cards1 .card:nth-child(4)::before {
+    background-image: url(/img/dashboard/beach.jpg);
+    background-position: 55%;
+}
+
+.cards2 .card:nth-child(1)::before {
+    background-image: url(/img/dashboard/seasonal.jpg);
+    background-position: 10%;
+}
+
+.cards2 .card:nth-child(2)::before {
+    background-image: url(/img/dashboard/waterfall.avif);
+}
+
+.cards2 .card:nth-child(3)::before {
+    background-image: url(/img/dashboard/jungle.avif);
+    background-position: 45%;
+}
+
+.cards2 .card:nth-child(4)::before {
+    background-image: url(/img/dashboard/adventures.jpg);
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.description {
+    font-family: serif;
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #66666666;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #000;
+}
+
+.card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.80) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
+
+/* Hover */
+@media (hover: hover) and (min-width: 600px) {
+    .card::after {
+        transform: translateY(0);
+    }
+
+    .content {
+        transform: translateY(calc(100% - 4.5rem));
+    }
+
+    .card:hover:after,
+    .card:focus-within:after {
+        transform: translateY(-50%);
+    }
+
+    .card:hover .content,
+    .card:focus-within .content {
+        transform: translateY(0);
+    }
+
+    .card:hover::before,
+    .card:focus-within::before {
+        transform: translateY(-5%);
+    }
+}
