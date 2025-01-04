@@ -18,12 +18,14 @@
             <span class="text">VoyageVerse</span>
         </span>
 
-        <span>
-            <div class="search">
-                <img class="first" src="/icon/location/search.svg" alt="">
-                <input type="text" placeholder="What do you want to search?">
-            </div>
-        </span>
+        <!-- <span>
+            <form action="">
+                <div class="search">
+                    <img class="first" src="/icon/location/search.svg" alt="">
+                    <input type="text" id="search-input" placeholder="What do you want to search?">
+                </div>
+            </form>
+        </span> -->
 
         <span>
             <ul>
@@ -47,7 +49,10 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti officiis illo id dolorem in
                     provident rem similique laboriosam temporibus delectus aut cumque rerum nostrum, quae corporis
                     ducimus animi veniam dolor explicabo? Aliquid odit placeat veniam maiores?</p>
-                <button><img src="/icon/location/plus.svg" alt=""> Add to Bucketlist</button>
+                <div class="btn">
+                    <button><img src="/icon/location/plus.svg" alt=""> Add to Bucketlist</button>
+                    <button><img src="/icon/location/plus.svg" alt=""> Add to Covered Destinations</button>
+                </div>
             </span>
         </div>
 
@@ -86,13 +91,13 @@
                 </div>
             </div>
 
-            <div class="title">
+            <!-- <div class="title">
                 <h1>Images</h1>
             </div>
             <div class="seperation"></div>
             <div class="grid">
 
-            </div>
+            </div> -->
 
             <div class="title">
                 <h1>Reviews</h1>
@@ -141,8 +146,9 @@
                         <div class="content">
                             <h3>
                                 <span>Username</span>
-                                <img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg"
-                                    alt=""><img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt="">
+                                <img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img
+                                    src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img
+                                    src="/icon/location/star.svg" alt="">
                             </h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati aspernatur minus
                                 voluptatem temporibus, repudiandae distinctio qui aliquid cumque nulla, rerum vitae
@@ -154,8 +160,9 @@
                         <div class="content">
                             <h3>
                                 <span>Username</span>
-                                <img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg"
-                                    alt=""><img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt="">
+                                <img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img
+                                    src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img
+                                    src="/icon/location/star.svg" alt="">
                             </h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati aspernatur minus
                                 voluptatem temporibus, repudiandae distinctio qui aliquid cumque nulla, rerum vitae
@@ -167,8 +174,9 @@
                         <div class="content">
                             <h3>
                                 <span>Username</span>
-                                <img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg"
-                                    alt=""><img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt="">
+                                <img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img
+                                    src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img
+                                    src="/icon/location/star.svg" alt="">
                             </h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati aspernatur minus
                                 voluptatem temporibus, repudiandae distinctio qui aliquid cumque nulla, rerum vitae
@@ -177,8 +185,24 @@
                     </div>
                 </div>
             </div>
+            <div class="seperation"></div>
+            <div class="opinion">
+                <div class="rate">
+                    <span>Rate this Place :&ensp;&ensp;&ensp;</span>
+                    <img src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img
+                        src="/icon/location/star.svg" alt=""><img src="/icon/location/star.svg" alt=""><img
+                        src="/icon/location/star.svg" alt="">
+                </div>
+                <div class="comment">
+                    <span>Add a comment :&ensp;&ensp;&ensp;</span>
+                    <input type="text" placeholder="Enter your comment here.">
+                    <button>Submit</button>
+                </div>
+            </div>
         </div>
     </main>
+
+    <script src="/js/location/search.js"></script>
 </body>
 
 </html>
