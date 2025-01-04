@@ -68,7 +68,7 @@
 }
 
 .card::before {
-    background-image: url(/img/bucketlist/mountain.jpg);
+    background-image: url(/img/covereddestinations/seasonal.jpg);
 }
 
 /* .card:nth-child(2)::before {
