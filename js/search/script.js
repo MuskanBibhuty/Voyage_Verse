@@ -26,7 +26,39 @@ const fetchTravelGuide = async (searchText) => {
     } catch (error) {
         console.error(error);
     }
+
+
+
+
+
+    // result.map((result) => {
+    //     const card = document.createElement('div')
+    //     card.classList.add("card")
+    //     const name = document.createElement('div')
+    //     name.classList.add("name")
+    //     name.textContent = result.name
+    //     const description = document.createElement('div')
+    //     description.classList.add("description")
+    //     description.textContent = result.description
+    //     const comment = document.createElement('div')
+    //     comment.classList.add("comment")
+    //     comment.textContent = result.comment
+    
+    //     card.appendChild(name)
+    //     card.appendChild(description)
+    //     card.appendChild(comment)
+    //     card.appendChild(card)
+    
+    // })
 };
+
+
+
+
+
+
+
+
 
 const searchBtn = document.getElementById("btn")
 searchBtn.addEventListener("click", (event) =>{

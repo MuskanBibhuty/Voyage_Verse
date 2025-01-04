@@ -31,10 +31,11 @@ nav {
     box-sizing: border-box;
 }
 
-nav span:first-child {
+nav span:first-child a{
     display: flex;
     align-items: center;
     padding-left: 60px;
+    text-decoration: none;
 }
 
 nav span:first-child img {
