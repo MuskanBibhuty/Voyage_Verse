@@ -1,13 +1,20 @@
-let res;
+// let res;
 
 const fetchTravelGuide = async (lat, long) => {
     console.log(lat, long)
-    const url = `https://api.geoapify.com/v2/places?categories=tourism.sights&conditions=wheelchair&bias=proximity:${long},${lat}&limit=10&apiKey=9021f7ffcc134742bf20b2aacf7d632f`;
+    const url = `https://api.geoapify.com/v2/places?categories=tourism.sights&conditions=wheelchair&bias=proximity:${long},${lat}&limit=12&apiKey=9021f7ffcc134742bf20b2aacf7d632f`;
     try {
         const response = await fetch(url);
         const result = await response.json();
-        res = result;
+        // res = result;
         console.log(result);
+
+        result?.features?.map((res, index) => {
+          console.log(res, index);
+          document.getElementById(`name${index+1}`).innerHTML = res.properties.name
+          document.getElementById(`address${index+1}`).innerHTML = res.properties.address_line1
+          document.getElementById(`city${index+1}`).innerHTML = res.properties.city
+        })
     } catch (error) {
         console.error(error);
     }
@@ -16,24 +23,24 @@ const fetchTravelGuide = async (lat, long) => {
 const GetLatlong = (place) => {
     let geocoder = new google.maps.Geocoder();
     let address = place;
-  
+
     geocoder.geocode({
-      'address': address
-    }, function(results, status) {
+        'address': address
+    }, function (results, status) {
 
-      if (status == google.maps.GeocoderStatus.OK) {
-        let latitude = results[0].geometry.location.lat();
-        let longitude = results[0].geometry.location.lng();
-        console.log(latitude, longitude)
+        if (status == google.maps.GeocoderStatus.OK) {
+            let latitude = results[0].geometry.location.lat();
+            let longitude = results[0].geometry.location.lng();
+            console.log(latitude, longitude)
 
-        fetchTravelGuide(latitude, longitude)
-      }
+            fetchTravelGuide(latitude, longitude)
+        }
     });
-  }
+}
 
 
 const searchBtn = document.getElementById("btn")
-searchBtn.addEventListener("click", (event) =>{
+searchBtn.addEventListener("click", (event) => {
     event.preventDefault()
     const searchText = document.getElementById("search").value
     console.log(searchText)
@@ -42,22 +49,22 @@ searchBtn.addEventListener("click", (event) =>{
 })
 
 
-res.map((result) => {
-    const card = document.createElement('div')
-    card.classList.add("card")
-    const name = document.createElement('div')
-    name.classList.add("name")
-    name.textContent = result.name
-    const description = document.createElement('div')
-    description.classList.add("description")
-    description.textContent = result.description
-    const comment = document.createElement('div')
-    comment.classList.add("comment")
-    comment.textContent = result.comment
+// res.map((result) => {
+//     const card = document.createElement('div')
+//     card.classList.add("card")
+//     const name = document.createElement('div')
+//     name.classList.add("name")
+//     name.textContent = result.name
+//     const description = document.createElement('div')
+//     description.classList.add("description")
+//     description.textContent = result.description
+//     const comment = document.createElement('div')
+//     comment.classList.add("comment")
+//     comment.textContent = result.comment
 
-    card.appendChild(name)
-    card.appendChild(description)
-    card.appendChild(comment)
-    card.appendChild(card)
+//     card.appendChild(name)
+//     card.appendChild(description)
+//     card.appendChild(comment)
+//     card.appendChild(card)
 
-})
+// })
