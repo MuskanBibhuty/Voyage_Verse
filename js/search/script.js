@@ -10,10 +10,10 @@ const fetchTravelGuide = async (lat, long) => {
         console.log(result);
 
         result?.features?.map((res, index) => {
-          console.log(res, index);
-          document.getElementById(`name${index+1}`).innerHTML = res.properties.name
-          document.getElementById(`address${index+1}`).innerHTML = res.properties.address_line1
-          document.getElementById(`city${index+1}`).innerHTML = res.properties.city
+            console.log(res, index);
+            document.getElementById(`name${index + 1}`).innerHTML = res.properties.name
+            document.getElementById(`address${index + 1}`).innerHTML = res.properties.address_line1
+            document.getElementById(`city${index + 1}`).innerHTML = res.properties.city
         })
     } catch (error) {
         console.error(error);
